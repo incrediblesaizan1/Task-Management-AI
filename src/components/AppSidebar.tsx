@@ -18,9 +18,11 @@ const AppSidebar = () => {
     <SidebarContent></SidebarContent>
 
     <SidebarFooter>
-  <div className="flex justify-start gap-2  w-full p-2">
-    <UserButton/>
-    <span>{user?.fullName}</span>
+  <div className=" flex justify-start rounded-md  items-center w-full p-2 ">
+    <div className='flex items-center p-2 rounded-full cursor-pointer hover:bg-accent'>
+    <UserButton />
+    </div>
+    <span className='text-md'>{user?.fullName}</span>
   </div>
 </SidebarFooter>
    </Sidebar>
