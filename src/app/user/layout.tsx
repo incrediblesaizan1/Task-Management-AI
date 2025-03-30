@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/AppSidebar";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 
 const inter = Inter({
@@ -15,10 +16,12 @@ export default function UserLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className={`${inter.variable} antialiased dark`}>
+      <TooltipProvider>
          <SidebarProvider>
        <AppSidebar />
       {children}
        </SidebarProvider>
+      </TooltipProvider>
     </div>
   );
 }   
