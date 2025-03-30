@@ -19,7 +19,7 @@ const page = () => {
 
         if(isSignedIn){
             localStorage.setItem("clerkUserId", userId)
-            router.push("/app/today")
+            router.push("/user/today")
         }
 
     }, [userId, isSignedIn, isLoaded])

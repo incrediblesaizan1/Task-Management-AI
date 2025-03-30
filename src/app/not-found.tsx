@@ -19,7 +19,7 @@ const notFound = () => {
             <Link href={"/"}>Return to Home</Link>
           </Button>
           <Button asChild variant={"ghost"}>
-            <Link href={"/app/inbox"}>View Inbox</Link>
+            <Link href={"/user/inbox"}>View Inbox</Link>
           </Button>
         </div>
 

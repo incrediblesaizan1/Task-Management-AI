@@ -13,22 +13,22 @@ export const SOCIAL_LINKS = [
 
 export const SIDEBAR_LINKS = [
   {
-    href: '/app/inbox',
+    href: '/user/inbox',
     label: 'Inbox',
     icon: Inbox,
   },
   {
-    href: '/app/today',
+    href: '/user/today',
     label: 'Today',
     icon: Calendar1,
   },
   {
-    href: '/app/upcoming',
+    href: '/user/upcoming',
     label: 'Upcoming',
     icon: CalendarDays,
   },
   {
-    href: '/app/completed',
+    href: '/user/completed',
     label: 'Completed',
     icon: CircleCheck,
   },
