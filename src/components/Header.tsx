@@ -1,11 +1,8 @@
 "use client";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { IoIosFlower } from "react-icons/io";
 import { Button } from "./ui/button";
-
 const Header = () => {
-  const router = useRouter();
 
   return (
     <header className="fixed top-0 left-0 w-full p-4">
@@ -17,13 +14,13 @@ const Header = () => {
           </div>
         </Link>
         <div className="flex items-center gap-2">
-          <Button asChild variant={"ghost"}>
+          <Button  variant={"ghost"}>
             <Link href={"/login"}>Sign in</Link>
           </Button>
 
-          <Button asChild className="bg-[#52ced6]">
-            <Link href={"/register"}>Start for free </Link>
-          </Button>
+           <Button  className="bg-[#52ced6]">
+             <Link href={"/register"}>Start for free </Link> 
+           </Button>  
         </div>
       </div>
     </header>
