@@ -22,7 +22,7 @@ const AuthSyncPage = () => {
             router.push("/user/today")
         }
 
-    }, [userId, isSignedIn, isLoaded])
+    }, [userId, isSignedIn, isLoaded, router])
     
 
   return (

@@ -10,7 +10,7 @@ const AppSidebar = () => {
    <Sidebar>
     <SidebarHeader>
     <Link href={"/user/inbox"} className='p-2 flex items-center gap-1'>
-    <IoIosFlower className='text-4xl' /> SK'task
+    <IoIosFlower className='text-4xl' /> {`SK'task`}
     </Link>
     </SidebarHeader>
 
