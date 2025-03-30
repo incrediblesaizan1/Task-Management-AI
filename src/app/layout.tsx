@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider
-    afterSignOutUrl="/auth-sync"
+    afterSignOutUrl="/"
     signInForceRedirectUrl="/auth-sync"
     signUpForceRedirectUrl="/auth-sync"
      appearance={{

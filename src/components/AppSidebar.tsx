@@ -2,10 +2,11 @@ import React from 'react'
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter } from './ui/sidebar'
 import Link from 'next/link'
 import { IoIosFlower } from "react-icons/io";
-import { UserButton } from '@clerk/nextjs';
+import { UserButton, useUser } from '@clerk/nextjs';
 
 
 const AppSidebar = () => {
+  const user = useUser().user
   return (
    <Sidebar>
     <SidebarHeader>
@@ -17,8 +18,11 @@ const AppSidebar = () => {
     <SidebarContent></SidebarContent>
 
     <SidebarFooter>
-      <UserButton showName />
-    </SidebarFooter>
+  <div className="flex justify-start gap-2  w-full p-2">
+    <UserButton/>
+    <span>{user?.fullName}</span>
+  </div>
+</SidebarFooter>
    </Sidebar>
   )
 }
