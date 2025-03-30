@@ -1,13 +1,11 @@
 import React from 'react'
 import { Sidebar, SidebarHeader, SidebarContent, SidebarFooter } from './ui/sidebar'
-import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { IoIosFlower } from "react-icons/io";
 import { UserButton } from '@clerk/nextjs';
 
 
 const AppSidebar = () => {
-    const router = useRouter()
   return (
    <Sidebar>
     <SidebarHeader>

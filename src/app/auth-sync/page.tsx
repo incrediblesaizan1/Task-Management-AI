@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useAuth } from '@clerk/nextjs'
 
 
-const page = () => {
+const AuthSyncPage = () => {
     const router = useRouter()
     const {isSignedIn, isLoaded, userId} = useAuth()
 
@@ -30,4 +30,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AuthSyncPage

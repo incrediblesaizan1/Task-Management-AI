@@ -10,7 +10,7 @@ const Header = () => {
         <Link href="/">
           <div className="flex items-center gap-1 font-semibold text-xl md:text-lg">
             <IoIosFlower className="text-[#52ced6] text-3xl md:text-5xl" />
-            SK'task
+            {`SK'task`}
           </div>
         </Link>
         <div className="flex items-center gap-2">
