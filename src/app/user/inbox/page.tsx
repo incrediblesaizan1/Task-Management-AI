@@ -1,13 +1,13 @@
 import { SidebarTrigger } from '@/components/ui/sidebar'
 import React from 'react'
 
-const todayPage = () => {
+const page = () => {
   return (
     <>
-    <SidebarTrigger />
-    <div>todayPage</div>
+     <SidebarTrigger />
+    <div>inboxpage</div>
     </>
   )
 }
 
-export default todayPage
+export default page 

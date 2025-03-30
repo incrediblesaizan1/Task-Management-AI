@@ -57,7 +57,7 @@ export default function RootLayout({
     }}>
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased dark`}
+        className={`${inter.variable} antialiased dark`}
       >
         {children}
       </body>
