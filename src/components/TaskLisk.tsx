@@ -24,7 +24,7 @@ const TaskLisk = () => {
     </Button>
             </PopoverTrigger>
             <PopoverContent className='w-auto p-0'>
-        <Calendar className='bg-zinc-900 rounded-md' mode='single' initialFocus disabled={{before: new Date()}} />
+        <Calendar  mode='single' initialFocus disabled={{before: new Date()}} />
             </PopoverContent>
         </Popover>
 
