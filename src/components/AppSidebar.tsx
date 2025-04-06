@@ -26,6 +26,7 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import { ChevronRight, CirclePlus, Plus } from "lucide-react";
 import { SIDEBAR_LINKS } from "@/constant";
 import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
+import TaskForm from "./TaskForm";
 
 const AppSidebar = () => {
   const user = useUser().user;
@@ -42,9 +43,11 @@ const AppSidebar = () => {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
+              <TaskForm>
                 <SidebarMenuButton className="text-[#52ced6] cursor-pointer">
                   <CirclePlus /> Add task
                 </SidebarMenuButton>
+              </TaskForm>
               </SidebarMenuItem>
 
               {SIDEBAR_LINKS.map((item, index) => (
@@ -61,7 +64,7 @@ const AppSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
 
-        <Collapsible className="group/collapsible">
+        <Collapsible defaultOpen className="group/collapsible">
           <SidebarGroup>
             <SidebarGroupLabel asChild className="text-sm text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground cursor-pointer">
               <CollapsibleTrigger >

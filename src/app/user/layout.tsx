@@ -16,7 +16,7 @@ export default function UserLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className={`${inter.variable} antialiased dark`}>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={500} disableHoverableContent>
          <SidebarProvider>
        <AppSidebar />
       {children}
